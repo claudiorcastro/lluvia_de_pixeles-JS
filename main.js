@@ -4,7 +4,7 @@ myImage.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFB
 myImage.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
-    canvas.width = 518;
+    canvas.width = 418;
     canvas.height = 189;
     
     ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
@@ -12,7 +12,7 @@ myImage.addEventListener('load', function(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     let particlesArray = [];
-    const numberOfParticles = 5000;
+    const numberOfParticles = 8000;
 
     let mappedImage = [];
     for (let y = 0; y < canvas.height; y++) {
